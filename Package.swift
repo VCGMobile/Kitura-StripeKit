@@ -11,7 +11,7 @@ let package = Package(
         .package(url: "https://github.com/swift-server/swift-nio-http-client.git",  .branch("master")),
     ],
     targets: [
-        .target(name: "KituraStripeKit", dependencies: ["NIOHTTPClient", "NIOFoundationCompat"], path: "Sources"),
-        .testTarget(name: "KituraStripeKitTests", dependencies: ["NIOHTTPClient", "KituraStripeKit"], path: "Tests")
+        .target(name: "KituraStripeKit", dependencies: ["AsyncHTTPClient", "NIOFoundationCompat"], path: "Sources"),
+        .testTarget(name: "KituraStripeKitTests", dependencies: ["AsyncHTTPClient", "KituraStripeKit"], path: "Tests")
     ]
 )
